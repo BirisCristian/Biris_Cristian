@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\StudentMVC\\StudentMVC.csproj": {}
+    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\StudentMVC\\StudentMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\StudentMVC\\StudentMVC.csproj": {
+    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\StudentMVC\\StudentMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\StudentMVC\\StudentMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\StudentMVC\\StudentMVC.csproj",
         "projectName": "StudentMVC",
-        "projectPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\StudentMVC\\StudentMVC.csproj",
+        "projectPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\StudentMVC\\StudentMVC.csproj",
         "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\StudentMVC\\obj\\",
+        "outputPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\StudentMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"

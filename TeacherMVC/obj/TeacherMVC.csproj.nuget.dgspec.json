@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\TeacherMVC\\TeacherMVC.csproj": {}
+    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\TeacherMVC\\TeacherMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\TeacherMVC\\TeacherMVC.csproj": {
+    "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\TeacherMVC\\TeacherMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\TeacherMVC\\TeacherMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\TeacherMVC\\TeacherMVC.csproj",
         "projectName": "TeacherMVC",
-        "projectPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\TeacherMVC\\TeacherMVC.csproj",
+        "projectPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\TeacherMVC\\TeacherMVC.csproj",
         "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Feedback Project\\TeacherMVC\\obj\\",
+        "outputPath": "C:\\Users\\Cristian\\OneDrive\\FACULTATE\\AN 4\\PSSC\\Github-project\\TeacherMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

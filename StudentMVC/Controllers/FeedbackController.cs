@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StudentMVC.Models;
 using StudentMVC.Repository;
+using StudentMVC.Services;
 
 namespace StudentMVC.Controllers
 {
@@ -13,10 +14,12 @@ namespace StudentMVC.Controllers
     {
 
         private  IFeedbackRepo feedbackRepo;
+        private readonly IService service;
 
-        public FeedbackController(IFeedbackRepo feedbackRepo)
+        public FeedbackController(IFeedbackRepo feedbackRepo, IService service)
         {
             this.feedbackRepo = feedbackRepo;
+            this.service = service;
         }
 
 
@@ -48,8 +51,14 @@ namespace StudentMVC.Controllers
             try
             {
                 feedback.Id = Guid.NewGuid();
+
+                //  adaugă feedbackul creat în lista din memorie
                 feedbackRepo.CreateFeedback(feedback);
-                
+
+                //  trimite feedback prin Publish-Subscribe RabbitMQ Queque
+                service.SendFeedback(feedback);
+
+               
 
                 return RedirectToAction(nameof(Index));
             }

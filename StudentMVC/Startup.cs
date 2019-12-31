@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using StudentMVC.Repository;
+using StudentMVC.Services;
 
 namespace StudentMVC
 {
@@ -24,10 +26,32 @@ namespace StudentMVC
       
         public void ConfigureServices(IServiceCollection services)
         {
+
+            // trimite prin massTransit rabbitMQ   publish-subscribe 
+
+
+            var bus = Bus.Factory.CreateUsingRabbitMq(sbc =>
+            {
+                var host = sbc.Host(new Uri("amqp://nqfmkaew:nIrU1GP9_2-AppQNTD8jzvynPPqvHWIR@dove.rmq.cloudamqp.com/nqfmkaew"), h =>
+                {
+                    h.Username("nqfmkaew");
+                    h.Password("nIrU1GP9_2-AppQNTD8jzvynPPqvHWIR");
+                });
+            });
+
+
+            bus.Start();
+
+
+
+
             ///////adaug serviciul dedicat din repository
-            var repo = new FeedbackRepo();
+            var repo = new FeedbackRepo(bus);
+
+            services.AddSingleton<IBus>(bus);
 
             services.AddSingleton<IFeedbackRepo>(repo);
+            services.AddScoped<IService, Service>();
 
             services.AddControllersWithViews();
         }

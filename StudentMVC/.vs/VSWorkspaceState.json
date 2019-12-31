@@ -3,9 +3,10 @@
     "",
     "\\Controllers",
     "\\Models",
+    "\\Repository",
     "\\Views",
     "\\Views\\Feedback"
   ],
-  "SelectedNode": "\\Controllers\\FeedbackController.cs",
+  "SelectedNode": "\\StudentMVC.sln",
   "PreviewInSolutionExplorer": false
 }
